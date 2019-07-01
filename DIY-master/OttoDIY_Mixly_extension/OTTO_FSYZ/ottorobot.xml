@@ -1,0 +1,114 @@
+<!-- type="company" 
+block="block/ottorobot.js"
+generator="generator/ottorobot.js" 
+media="media/ottorobot" 
+lib="ottorobot"
+hardware="hardware/arduino" 
+language="language/ottorobot" -->
+<!-- 
+Ver:0.01
+E-mail:58912355@qq.com
+-->
+<script type="text/javascript" src="../../blocks/company/ottorobot.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/ottorobot.js"></script>
+
+<category id="OTTO robot" name="OTTO" colour="40">
+            <block type="OTTO_include" name="#include">
+                <value name="String">
+                    <shadow type="text">
+                        <field name="TEXT">Otto.h</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="OTTO_define" name="#define">
+                <value name="TYPE">
+                    <shadow type="text">
+                        <field name="TEXT">PIN_YL</field>
+                    </shadow>
+                </value>
+                <value name="NAME">
+                    <shadow type="text">
+                        <field name="TEXT">2</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="OTTO_declare" name="declare">
+                <value name="TYPE">
+                    <shadow type="text">
+                        <field name="TEXT">Otto</field>
+                    </shadow>
+                </value>
+                <value name="NAME">
+                    <shadow type="text">
+                        <field name="TEXT">Otto</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="OTTO_home" name="home">
+                <value name="TYPE">
+                    <shadow type="text">
+                        <field name="TEXT">Otto</field>
+                    </shadow>
+                </value>
+                <value name="NAME">
+                    <shadow type="text">
+                        <field name="TEXT">home()</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="OTTO_init" name="init">
+                <value name="YL">
+                    <shadow type="pins_digital">
+                        <field name="PIN">2</field>
+                    </shadow>
+                </value>
+                <value name="YR">
+                    <shadow type="pins_digital">
+                        <field name="PIN">3</field>
+                    </shadow>
+                </value>
+                <value name="RL">
+                    <shadow type="pins_digital">
+                        <field name="PIN">4</field>
+                    </shadow>
+                </value>
+                <value name="RR">
+                    <shadow type="pins_digital">
+                        <field name="PIN">5</field>
+                    </shadow>
+                </value>
+                <value name="Load_Calibration">
+                         <shadow type="OTTO_init_lcs"></shadow>
+                </value>
+                <value name="NoiseSensor">
+                        <shadow type="pins_analog">
+                                <field name="PIN">A0</field>
+                        </shadow>
+                </value>
+                <value name="Buzzer">
+                        <shadow type="pins_digital">
+                                <field name="PIN">10</field>
+                        </shadow>
+                </value>
+                <value name="USTrigger">
+                        <shadow type="pins_digital">
+                                <field name="PIN">8</field>
+                        </shadow>
+                </value>
+                <value name="USEcho">
+                        <shadow type="pins_digital">
+                                <field name="PIN">9</field>
+                        </shadow>
+                </value>
+            </block>
+            <block type="OTTO_sing" name="sing">
+               <value name="SOUND">
+                    <shadow type="OTTO_sing_sound"></shadow>
+              </value>
+            </block>
+            <block type="OTTO_playGesture" name="playGesture">
+               <value name="emotion">
+                    <shadow type="OTTO_playGesture_emotion"></shadow>
+              </value>
+            </block>
+</category> 
